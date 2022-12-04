@@ -16,7 +16,9 @@ for (i = 0; i < lines.length; i++) {
 }
 console.log(elves);
 
+// part one - Find the Elf carrying the most calories
 const max = elves.sort((a, b) => b - a);
 console.log(max[0]);
 
+// second part - find the top three elves carrying most calories
 console.log(max[0] + max[1] + max[2]);
