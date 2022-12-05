@@ -1,7 +1,5 @@
 const fs = require("fs");
-const fileName = process.argv[2];
-
-const data = fs.readFileSync(fileName).toString();
+const data = fs.readFileSync("./dayOne.txt").toString();
 const lines = data.split("\n\n");
 // console.log(lines)
 

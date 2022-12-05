@@ -1,5 +1,5 @@
 const fs = require("fs");
-const data = fs.readFileSync("./day2.txt").toString();
+const data = fs.readFileSync("./dayTwo.txt").toString();
 const lines = data.split("\n");
 // console.log(lines);
 
