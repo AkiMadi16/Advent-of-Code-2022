@@ -24,3 +24,18 @@ const checkPairs = newArray.filter((pair) => {
 });
 
 console.log(checkPairs.length);
+
+//part Two
+
+const checkOverLappingPairs = newArray.filter((pair) => {
+  const numberArray = pair.map((num) =>
+    num.split("-").map((string) => Number(string))
+  );
+  console.log(numberArray);
+  return (
+    numberArray[0][0] <= numberArray[1][1] &&
+    numberArray[0][1] >= numberArray[1][0]
+  );
+});
+
+console.log(checkOverLappingPairs.length);
