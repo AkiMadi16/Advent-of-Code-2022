@@ -15,7 +15,7 @@ The jungle must be too overgrown and difficult to navigate in vehicles or access
 The Elves take turns writing down the number of Calories contained by the various meals, snacks, rations, etc. that they've brought with them, one item per line. Each Elf separates their own inventory from the previous Elf's inventory (if any) by a blank line.
 
 For example, suppose the Elves finish writing their items' Calories and end up with the following list:
-
+```
 1000
 2000
 3000
@@ -30,6 +30,7 @@ For example, suppose the Elves finish writing their items' Calories and end up w
 9000
 
 10000
+```
 
 This list represents the Calories of the food carried by five Elves:
 
@@ -58,10 +59,11 @@ The winner of the whole tournament is the player with the highest score. Your to
 Since you can't be sure if the Elf is trying to help you or trick you, you should calculate the score you would get if you were to follow the strategy guide.
 
 For example, suppose you were given the following strategy guide:
-
+```
 A Y
 B X
 C Z
+```
 This strategy guide predicts and recommends the following:
 
 In the first round, your opponent will choose Rock (A), and you should choose Paper (Y). This ends in a win for you with a score of 8 (2 because you chose Paper + 6 because you won).
@@ -84,12 +86,15 @@ The list of items for each rucksack is given as characters all on a single line.
 
 For example, suppose you have the following list of contents from six rucksacks:
 
+```
 vJrwpWtwJgWrhcsFMMfFFhFp
 jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL
 PmmdzqPrVvPwwTWBwg
 wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn
 ttgJtRGJQctTZtZT
 CrZsJsPPZsGzwwsLwLmpwMDw
+```
+
 The first rucksack contains the items vJrwpWtwJgWrhcsFMMfFFhFp, which means its first compartment contains the items vJrwpWtwJgWr, while the second compartment contains the items hcsFMMfFFhFp. The only item type that appears in both compartments is lowercase p.
 The second rucksack's compartments contain jqHRNqRjqzjGDLGL and rsFMfFZSrLrFZsSL. The only item type that appears in both compartments is uppercase L.
 The third rucksack's compartments contain PmmdzqPrV and vPwwTWBwg; the only common item type is uppercase P.
@@ -113,12 +118,14 @@ However, as some of the Elves compare their section assignments with each other,
 
 For example, consider the following list of section assignment pairs:
 
+```
 2-4,6-8
 2-3,4-5
 5-7,7-9
 2-8,3-7
 6-6,4-6
 2-6,4-8
+```
 For the first few pairs, this list means:
 
 Within the first pair of Elves, the first Elf was assigned sections 2-4 (sections 2, 3, and 4), while the second Elf was assigned sections 6-8 (sections 6, 7, 8).
@@ -126,6 +133,7 @@ The Elves in the second pair were each assigned two sections.
 The Elves in the third pair were each assigned three sections: one got sections 5, 6, and 7, while the other also got 7, plus 8 and 9.
 This example list uses single-digit section IDs to make it easier to draw; your actual list might contain larger numbers. Visually, these pairs of section assignments look like this:
 
+```
 .234.....  2-4
 .....678.  6-8
 
@@ -143,11 +151,13 @@ This example list uses single-digit section IDs to make it easier to draw; your 
 
 .23456...  2-6
 ...45678.  4-8
+```
+
 Some of the pairs have noticed that one of their assignments fully contains the other. For example, 2-8 fully contains 3-7, and 6-6 is fully contained by 4-6. In pairs where one assignment fully contains the other, one Elf in the pair would be exclusively cleaning sections their partner will already be cleaning, so these seem like the most in need of reconsideration. In this example, there are 2 such pairs.
 
 In how many assignment pairs does one range fully contain the other?
 
-## Day Six ➡️  [dayFour](https://github.com/AkiMadi16/Advent-of-Code-2022/blob/main/daySix.js)
+## Day Six ➡️  [daySix](https://github.com/AkiMadi16/Advent-of-Code-2022/blob/main/daySix.js)
 
 --- Day 6: Tuning Trouble ---
 The preparations are finally complete; you and the Elves leave camp on foot and begin to make your way toward the star fruit grove.
@@ -173,10 +183,13 @@ The first time a marker appears is after the seventh character arrives. Once it 
 
 Here are a few more examples:
 
+```
 bvwbjplbgvbhsrlpgdmjqwftvncz: first marker after character 5
 nppdvjthqldpwncqszvftbrmjlhg: first marker after character 6
 nznrnfrfntjfmvfwmzdfjlvtqnbhcprsg: first marker after character 10
 zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw: first marker after character 11
+```
+
 How many characters need to be processed before the first start-of-packet marker is detected?
 
 
